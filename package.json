@@ -1,7 +1,7 @@
 {
-  "name": "electron-lessons",
-  "version": "1.0.0",
-  "description": "A sample Electron (JS) project for Medium lessons.",
+  "name": "update-app",
+  "version": "1.0.1",
+  "description": "An Electron app to test update functionality for GitHub.",
   "main": "app/index.js",
   "scripts": {
     "start": "electron .",
@@ -10,18 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/course-one/electron-lessons.git"
+    "url": "git+https://github.com/cedgray/electron-lessons-file-io-builder.git"
   },
   "author": {
-    "name": "Uday Hiwarale",
-    "email": "thatisuday@gmail.com",
-    "url": "https://thatisuday.com"
+    "name": "Chris Gray",
+    "email": "cedgray@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/course-one/electron-lessons/issues"
+    "url": "https://github.com/cedgray/electron-lessons-file-io-builder/issues"
   },
-  "homepage": "https://github.com/course-one/electron-lessons#readme",
+  "homepage": "https://github.com/cedgray/electron-lessons-file-io-builder#readme",
   "devDependencies": {
     "electron": "^11.1.1",
     "electron-builder": "^22.9.1",
