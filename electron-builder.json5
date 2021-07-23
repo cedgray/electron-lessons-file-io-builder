@@ -1,0 +1,58 @@
+{
+    "appId": "com.thatisuday.fileio",
+    "productName": "Electron File IO",
+    "copyright": "THATISUDAY TECH PVT. LTD.",
+    "directories": {
+        "app": ".",
+        "output": "out",
+        "buildResources": "build-res"
+    },
+    "files": [
+        "package.json",
+        "app/**/*",
+        "node_modules"
+    ],
+    "dmg": {
+        "background": null,
+        "backgroundColor": "#ffffff",
+        "window": {
+            "width": "400",
+            "height": "300"
+        },
+        "contents": [
+            {
+                "x": 100,
+                "y": 100
+            },
+            {
+                "x": 300,
+                "y": 100,
+                "type": "link",
+                "path": "/Applications"
+            }
+        ],
+        "sign": false
+    },
+    "mac": {
+        "hardenedRuntime": true,
+        "entitlements": "entitlements.mac.plist",
+        "entitlementsInherit": "entitlements.mac.plist",
+        "gatekeeperAssess": false,
+        "target": "dmg",
+        "category": "public.app-category.utilities"
+    },
+    "win": {
+        "target": "nsis"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "publish": {
+        "provider": "github",
+        "owner": "course-one",
+        "repo": "electron-lessons",
+        "releaseType": "release"
+    },
+    "afterSign": "notarize.js"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "electron-lessons",
+  "version": "1.0.0",
+  "description": "A sample Electron (JS) project for Medium lessons.",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/course-one/electron-lessons.git"
+  },
+  "author": {
+    "name": "Uday Hiwarale",
+    "email": "thatisuday@gmail.com",
+    "url": "https://thatisuday.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/course-one/electron-lessons/issues"
+  },
+  "homepage": "https://github.com/course-one/electron-lessons#readme",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1",
+    "electron-notarize": "^1.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.4.3",
+    "dotenv": "^10.0.0",
+    "drag-drop": "^6.1.0",
+    "electron-updater": "^4.3.9",
+    "fs-extra": "^9.0.1",
+    "open": "^7.3.0"
+  }
+}
