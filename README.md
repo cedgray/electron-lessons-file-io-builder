@@ -1,2 +1,2 @@
-# electron-lessons
-A sample Electron (JS) project for Medium lessons.
+# dummy autoUpdate app
+A sample Electron (JS) project for testing the autoUpdate functionality.
