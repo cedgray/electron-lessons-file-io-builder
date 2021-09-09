@@ -39,7 +39,13 @@
         "entitlementsInherit": "entitlements.mac.plist",
         "gatekeeperAssess": false,
         "target": "dmg",
-        "category": "public.app-category.utilities"
+        "category": "public.app-category.utilities",
+        "publish": {
+            "provider": "github",
+            "owner": "cedgray",
+            "repo": "electron-lessons-file-io-builder",
+            "releaseType": "release"
+        },
     },
     "win": {
         "target": "nsis"
@@ -50,8 +56,8 @@
     },
     "publish": {
         "provider": "github",
-        "owner": "course-one",
-        "repo": "electron-lessons",
+        "owner": "cedgray",
+        "repo": "electron-lessons-file-io-builder",
         "releaseType": "release"
     },
     "afterSign": "notarize.js"

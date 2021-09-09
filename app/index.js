@@ -5,8 +5,42 @@ const { autoUpdater } = require( 'electron-updater' );
 // local dependencies
 const io = require( './main/io' );
 
+autoUpdater.on("error", msg => {
+    console.info("# Event: error: ", msg);
+});
+
+autoUpdater.on("checking-for-update", _event => {
+    console.info("# Event: checking for update");
+});
+
+autoUpdater.on("update-available", _event => {
+    console.info("# Event: update-available");
+});
+
+autoUpdater.on("update-not-available", _event => {
+    console.info("# Event: update-not-available");
+});
+
+autoUpdater.on("update-downloaded", _event => {
+    console.info("# Event: update-downloaded");
+});
+
+autoUpdater.on("before-quit-for-update", _event => {
+    console.info("# Event: before-quit-for-update");
+});
+
+// ==========
+
+console.log("getFeedURL: ", autoUpdater.getFeedURL());
+
+console.log("* Running checkForUpdates");
+const foo = autoUpdater.checkForUpdates();
+console.log("* Result for checkForUpdates: ", foo);
+
 // check for updates
-autoUpdater.checkForUpdatesAndNotify();
+console.log("* Running checkForUpdatesAndNotify");
+const updateReturn = autoUpdater.checkForUpdatesAndNotify();
+console.log("* Results for checkForUpdatesAndNotify: ", updateReturn);
 
 // open a window
 const openWindow = () => {
